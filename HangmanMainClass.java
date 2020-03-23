@@ -279,764 +279,32 @@ public class HangmanMainClass extends JFrame {
 
 			}
 // hinzufügen der Funktion der Buttons
-			A_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					// Button wird deaktiviert
-					A_Button.setEnabled(false);
-					// Buchtsaben des Wortes werden mit angeklickten Buchstaben verglichen
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[A,a]")) {
-								// Treffer
-								setIndex(i);
-								String a = "A";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						// kein Treffer
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			B_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					B_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[B,b]")) {
-								setIndex(i);
-
-								String b = "b";
-								setBuchstabe(b);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			V_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					V_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[V,v]")) {
-								setIndex(i);
-
-								String v = "v";
-								setBuchstabe(v);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-
-				}
-			});
-			E_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					E_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[E,e]")) {
-								setIndex(i);
-
-								String ee = "E";
-								setBuchstabe(ee);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-
-				}
-			});
-			C_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					C_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[C,c]")) {
-								setIndex(i);
-
-								String a = "C";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			D_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					D_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[D,d]")) {
-								setIndex(i);
-
-								String a = "D";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			F_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					F_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[F,f]")) {
-								setIndex(i);
-
-								String a = "F";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			G_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					G_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[G,g]")) {
-								setIndex(i);
-
-								String a = "G";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			H_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					H_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[H,h]")) {
-								setIndex(i);
-
-								String a = "H";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			I_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					I_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[I,i]")) {
-								setIndex(i);
-
-								String a = "I";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			J_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					J_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[J,j]")) {
-								setIndex(i);
-
-								String a = "J";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			K_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					K_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[K,k]")) {
-								setIndex(i);
-
-								String a = "K";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			L_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					L_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[L,l]")) {
-								setIndex(i);
-
-								String a = "L";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			M_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					M_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[M,m]")) {
-
-								setIndex(i);
-								String a = "M";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			N_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					N_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[N,n]")) {
-
-								setIndex(i);
-								String a = "N";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			O_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					O_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[O,o]")) {
-
-								setIndex(i);
-								String a = "O";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			P_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					P_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[P,p]")) {
-
-								setIndex(i);
-								String a = "P";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			Q_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					Q_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[Q,q]")) {
-
-								setIndex(i);
-								String a = "Q";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			R_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					R_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[R,r]")) {
-
-								setIndex(i);
-								String a = "R";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			S_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					S_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[S,s]")) {
-
-								setIndex(i);
-								String a = "S";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			T_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					T_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[T,t]")) {
-
-								setIndex(i);
-								String a = "T";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			U_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					U_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[U,u]")) {
-
-								setIndex(i);
-								String a = "U";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			W_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					W_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[W,w]")) {
-								setMatch(true);
-								setIndex(i);
-								String a = "W";
-								setBuchstabe(a);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			X_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					X_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[X,x]")) {
-
-								setIndex(i);
-								String a = "X";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			Y_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					Y_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[Y,y]")) {
-
-								setIndex(i);
-								String a = "Y";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
-			Z_Button.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					int MatchCount = 0;
-					Z_Button.setEnabled(false);
-					try {
-						for (int i = 0; i < WordStrings(n); i++) {
-							if (LetterArray(n)[i].matches("[Z,z]")) {
-
-								setIndex(i);
-								String a = "Z";
-								setBuchstabe(a);
-								setMatch(true);
-								MatchCount++;
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e1) {
-									e1.printStackTrace();
-								}
-							}
-						}
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
-					if (MatchCount == 0) {
-						setMistakeCount(getMistakeCount() + 1);
-						setMistake(true);
-					}
-				}
-			});
+			setActionListener(A_Button, "[A,a]", "A");
+			setActionListener(B_Button, "[B,b]", "b");
+			setActionListener(C_Button, "[C,c]", "C");
+			setActionListener(D_Button, "[D,d]", "D");
+			setActionListener(E_Button, "[E,e]", "E");
+			setActionListener(F_Button, "[F,f]", "F");
+			setActionListener(G_Button, "[G,g]", "G");
+			setActionListener(H_Button, "[H,h]", "H");
+			setActionListener(I_Button, "[I,i]", "I");
+			setActionListener(J_Button, "[J,j]", "J");
+			setActionListener(K_Button, "[K,k]", "K");
+			setActionListener(L_Button, "[L,l]", "L");
+			setActionListener(M_Button, "[M,m]", "M");
+			setActionListener(N_Button, "[N,n]", "N");
+			setActionListener(O_Button, "[O,o]", "O");
+			setActionListener(P_Button, "[P,p]", "P");
+			setActionListener(Q_Button, "[Q,q]", "Q");
+			setActionListener(R_Button, "[R,r]", "R");
+			setActionListener(S_Button, "[S,s]", "S");
+			setActionListener(T_Button, "[T,t]", "T");
+			setActionListener(U_Button, "[U,u]", "U");
+			setActionListener(V_Button, "[V,v]", "v");
+			setActionListener(W_Button, "[W,w]", "W");
+			setActionListener(X_Button, "[X,x]", "X");
+			setActionListener(Y_Button, "[Y,y]", "Y");
+			setActionListener(Z_Button, "[Z,z]", "Z");
 
 // Größe des Fensters, Sichtbarkeit bestimmen
 			if (WordStrings(n) > 10) {
@@ -1275,14 +543,14 @@ public class HangmanMainClass extends JFrame {
 		BufferedReader reader = new BufferedReader(fileReader);
 		String word;
 		// erstellen eines Arrays mit allen Wörtern
-		ArrayList<String> wörter = new ArrayList();
+		ArrayList<String> woerter = new ArrayList();
 		while ((word = reader.readLine()) != null) {
-			wörter.add(word);
+			woerter.add(word);
 		}
 
 		reader.close();
 		fileReader.close();
-		return wörter.get(n);
+		return woerter.get(n);
 	}
 
 // einstellen des Buchstaben
@@ -1293,6 +561,41 @@ public class HangmanMainClass extends JFrame {
 // abfragen des Buchstaben, um die richtige Datei anzuzeigen
 	public String getBuchstabe() {
 		return Buchstabe;
+	}
+
+	public void setActionListener(Button knopf, String pattern, String letter) {
+		knopf.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int MatchCount = 0;
+				// Button wird deaktiviert
+				knopf.setEnabled(false);
+				// Buchtsaben des Wortes werden mit angeklickten Buchstaben verglichen
+				try {
+					for (int i = 0; i < WordStrings(n); i++) {
+						if (LetterArray(n)[i].matches(pattern)) {
+							// Treffer
+							setIndex(i);
+							String a = letter;
+							setBuchstabe(a);
+							setMatch(true);
+							MatchCount++;
+							try {
+								Thread.sleep(100);
+							} catch (InterruptedException e1) {
+								e1.printStackTrace();
+							}
+						}
+					}
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				if (MatchCount == 0) {
+					// kein Treffer
+					setMistakeCount(getMistakeCount() + 1);
+					setMistake(true);
+				}
+			}
+		});
 	}
 
 }
